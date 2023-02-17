@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="joy" name="joy_node" type="joy_node">
+  </node>
+
+  <node pkg="Step_Leg_Control" name="SLC3_node" type="SLC3_node">
+  </node>
+
+</launch>
