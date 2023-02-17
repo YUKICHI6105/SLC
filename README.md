@@ -1,6 +1,6 @@
 # Step_Leg_Control
 ステッピングモーターを使ったオムニ系足回りコード  
-joy_nodeと併用で動きます。  
+joy_nodeと併用で動きます。パッケージ名はSLC。  
 
 ##Launchファイル
 SLC3.launch
@@ -14,8 +14,8 @@ joy_nodeと一緒に起動させます。
 
 使用コントローラー:logcool F710?(Dモード)  
 
-Aボタン mode_vel?に変更  
-Yボタン mode_disable?に変更  
+Bボタン mode_vel?に変更  
+Aボタン mode_disable?に変更  
 
 右スティック 倒した方向に移動   
 LB　左回転  
@@ -26,8 +26,8 @@ RB　右回転
 
 使用コントローラー:logcool F710?(Dモード)  
 
-Aボタン mode_vel?に変更  
-Yボタン mode_disable?に変更  
+Bボタン mode_vel?に変更  
+Aボタン mode_disable?に変更  
 
 右スティック 倒した方向に移動   
 LB　左回転  
