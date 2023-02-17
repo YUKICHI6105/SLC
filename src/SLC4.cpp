@@ -29,7 +29,7 @@ int main(int argc, char **argv){
 
         if(msg->buttons[1]==1)
         {
-            chatter.publish(get_frame(0x100,static_cast<uint8_t>(5)));
+            chatter.publish(get_frame(0x300,static_cast<uint8_t>(5)));
             chatter.publish(get_frame(0x110,static_cast<uint8_t>(5)));
             chatter.publish(get_frame(0x120,static_cast<uint8_t>(5)));
             chatter.publish(get_frame(0x130,static_cast<uint8_t>(5)));
@@ -38,7 +38,7 @@ int main(int argc, char **argv){
         
         if(msg->buttons[3]==1)
         {
-            chatter.publish(get_frame(0x100,static_cast<uint8_t>(0)));
+            chatter.publish(get_frame(0x300,static_cast<uint8_t>(0)));
             chatter.publish(get_frame(0x110,static_cast<uint8_t>(0)));
             chatter.publish(get_frame(0x120,static_cast<uint8_t>(0)));
             chatter.publish(get_frame(0x130,static_cast<uint8_t>(0)));
@@ -68,7 +68,7 @@ int main(int argc, char **argv){
             r =0.0f;
         }
         //右回転
-        chatter.publish(get_frame(0x101, y-x+r/2));
+        chatter.publish(get_frame(0x301, y-x+r/2));
         chatter.publish(get_frame(0x111, x+y+r/2));
         chatter.publish(get_frame(0x121, x-y+r/2));
         chatter.publish(get_frame(0x131, -x-y+r/2));
