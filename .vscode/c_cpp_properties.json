@@ -5,8 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/opt/ros/noetic/include",
-                "/home/yukichi/catkin_ws/devel/include",
-                "/home/yukichi/catkin_ws/src/can_plugins/include"
+                "/home/yukichi6105/catkin_ws/devel/include",
+                "/home/yukichi6105/catkin_ws/src/can_plugins/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
