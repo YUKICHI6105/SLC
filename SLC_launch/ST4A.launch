@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="joy" name="joy_node" type="joy_node">
+  </node>
+
+  <node pkg="SLC" name="ST4A_node" type="ST4A_node">
+  </node>
+
+</launch>
