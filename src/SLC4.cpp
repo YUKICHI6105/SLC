@@ -31,7 +31,7 @@ int main(int argc, char **argv){
 
         if(msg.buttons[2]==1)
         {
-            chatter.publish(get_frame(0x300,static_cast<uint8_t>(5)));
+            chatter.publish(get_frame(0x100,static_cast<uint8_t>(5)));
             chatter.publish(get_frame(0x110,static_cast<uint8_t>(5)));
             chatter.publish(get_frame(0x120,static_cast<uint8_t>(5)));
             chatter.publish(get_frame(0x130,static_cast<uint8_t>(5)));
@@ -40,10 +40,10 @@ int main(int argc, char **argv){
         
         if(msg.buttons[1]==1)
         {
-            chatter.publish(get_frame(0x300,static_cast<uint8_t>(0)));
-            chatter.publish(get_frame(0x110,static_cast<uint8_t>(0)));
-            chatter.publish(get_frame(0x120,static_cast<uint8_t>(0)));
-            chatter.publish(get_frame(0x130,static_cast<uint8_t>(0)));
+            chatter.publish(get_frame(0x100,static_cast<uint8_t>(1)));
+            chatter.publish(get_frame(0x110,static_cast<uint8_t>(1)));
+            chatter.publish(get_frame(0x120,static_cast<uint8_t>(1)));
+            chatter.publish(get_frame(0x130,static_cast<uint8_t>(1)));
         }
         //↑手動でmodeをfalseへ
 
@@ -66,7 +66,7 @@ int main(int argc, char **argv){
         {
             r =0.0f;
         }
-        chatter.publish(get_frame(0x301, 6.28f*(y-x+r)));
+        chatter.publish(get_frame(0x101, 6.28f*(y-x+r)));
         chatter.publish(get_frame(0x111, 6.28f*(x+y+r)));
         chatter.publish(get_frame(0x121, 6.28f*(x-y+r)));
         chatter.publish(get_frame(0x131, 6.28f*(-x-y+r)));

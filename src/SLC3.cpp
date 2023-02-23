@@ -39,9 +39,9 @@ int main(int argc, char **argv){
         
         if(msg.buttons[1]==1)
         {
-            chatter.publish(get_frame(0x100,static_cast<uint8_t>(0)));
-            chatter.publish(get_frame(0x110,static_cast<uint8_t>(0)));
-            chatter.publish(get_frame(0x120,static_cast<uint8_t>(0)));
+            chatter.publish(get_frame(0x100,static_cast<uint8_t>(1)));
+            chatter.publish(get_frame(0x110,static_cast<uint8_t>(1)));
+            chatter.publish(get_frame(0x120,static_cast<uint8_t>(1)));
         }
         //↑手動でmodeをfalseへ
 
