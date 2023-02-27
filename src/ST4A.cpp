@@ -29,7 +29,7 @@ int main(int argc, char **argv){
 
     ros::Subscriber sub = n.subscribe("joy", 1000, joyCallback);
 
-    ros::Rate loop_rate(10);
+    ros::Rate loop_rate(1);
 
     int count = 0;
     while (ros::ok()){
@@ -71,13 +71,12 @@ int main(int argc, char **argv){
             }
             //Xボタンで実行
             //can_plugins::Frame a = get_frame(0x101, 1.0f);
-
-            ros::spinOnce();
-
-            loop_rate.sleep();
-            ++count;
         }
-    }
 
+        ros::spinOnce();
+
+        loop_rate.sleep();
+        ++count;
+    }
     return 0;
 }
