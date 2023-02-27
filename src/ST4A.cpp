@@ -33,7 +33,7 @@ int main(int argc, char **argv){
 
     int count = 0;
     while (ros::ok()){
-        ROS_INFO("Tomo no sonshitu: 30000yen");
+        ROS_INFO("Tomo no sonshitu: 30000yen otu");
         if(gcount == 1)
         {
             const sensor_msgs::Joy& msg = gmsg;
