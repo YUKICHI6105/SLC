@@ -138,9 +138,11 @@ include_directories(
 
 add_executable(SLC3_node src/SLC3.cpp)
 add_executable(SLC4_node src/SLC4.cpp)
+add_executable(ST4A_node src/ST4A.cpp)
 
 target_link_libraries(SLC3_node ${catkin_LIBRARIES})
 target_link_libraries(SLC4_node ${catkin_LIBRARIES})
+target_link_libraries(ST4A_node ${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
